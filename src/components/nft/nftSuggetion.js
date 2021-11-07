@@ -5,7 +5,7 @@ import { NftContext } from "../../App";
 import { Link } from "react-router-dom";
 
 export const NftSuggetion = () => {
-  const { nftList } = useContext(NftContext);
+  const { nftList, setSelectedNft } = useContext(NftContext);
   return (
     <React.Fragment>
       <h3 className="text-4xl font-bold text-white mb-12">
@@ -17,7 +17,12 @@ export const NftSuggetion = () => {
           var id = Math.floor(Math.random() * nftList.length);
           return (
             <Link to={`/nfts/${id}`}>
-              <div className="border border-primary border-opacity-25 hover:border-opacity-50 p-3">
+              <div
+                onClick={() => {
+                  setSelectedNft(nftList[id]);
+                }}
+                className="border border-primary border-opacity-25 hover:border-opacity-50 p-3"
+              >
                 <div className="relative bg-green-900 bg-opacity-25 w-full">
                   <img
                     src={nftList[id].imageUrl}
