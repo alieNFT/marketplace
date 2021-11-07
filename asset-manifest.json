@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/marketplace/static/css/main.346b82ca.chunk.css",
-    "main.js": "/marketplace/static/js/main.6282a597.chunk.js",
-    "main.js.map": "/marketplace/static/js/main.6282a597.chunk.js.map",
-    "runtime-main.js": "/marketplace/static/js/runtime-main.6aab4cf6.js",
-    "runtime-main.js.map": "/marketplace/static/js/runtime-main.6aab4cf6.js.map",
-    "static/js/2.05e2d29c.chunk.js": "/marketplace/static/js/2.05e2d29c.chunk.js",
-    "static/js/2.05e2d29c.chunk.js.map": "/marketplace/static/js/2.05e2d29c.chunk.js.map",
-    "index.html": "/marketplace/index.html",
-    "static/css/main.346b82ca.chunk.css.map": "/marketplace/static/css/main.346b82ca.chunk.css.map",
-    "static/js/2.05e2d29c.chunk.js.LICENSE.txt": "/marketplace/static/js/2.05e2d29c.chunk.js.LICENSE.txt",
-    "static/media/logo.3bf408b0.svg": "/marketplace/static/media/logo.3bf408b0.svg",
-    "static/media/metamask.09e5f554.svg": "/marketplace/static/media/metamask.09e5f554.svg",
-    "static/media/nft1.79667f0e.png": "/marketplace/static/media/nft1.79667f0e.png",
-    "static/media/nft2.eecba072.png": "/marketplace/static/media/nft2.eecba072.png"
+    "main.css": "/static/css/main.346b82ca.chunk.css",
+    "main.js": "/static/js/main.0aaf1f3e.chunk.js",
+    "main.js.map": "/static/js/main.0aaf1f3e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.72cb71df.js",
+    "runtime-main.js.map": "/static/js/runtime-main.72cb71df.js.map",
+    "static/js/2.05e2d29c.chunk.js": "/static/js/2.05e2d29c.chunk.js",
+    "static/js/2.05e2d29c.chunk.js.map": "/static/js/2.05e2d29c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.346b82ca.chunk.css.map": "/static/css/main.346b82ca.chunk.css.map",
+    "static/js/2.05e2d29c.chunk.js.LICENSE.txt": "/static/js/2.05e2d29c.chunk.js.LICENSE.txt",
+    "static/media/logo.3bf408b0.svg": "/static/media/logo.3bf408b0.svg",
+    "static/media/metamask.09e5f554.svg": "/static/media/metamask.09e5f554.svg",
+    "static/media/nft1.79667f0e.png": "/static/media/nft1.79667f0e.png",
+    "static/media/nft2.eecba072.png": "/static/media/nft2.eecba072.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6aab4cf6.js",
+    "static/js/runtime-main.72cb71df.js",
     "static/js/2.05e2d29c.chunk.js",
     "static/css/main.346b82ca.chunk.css",
-    "static/js/main.6282a597.chunk.js"
+    "static/js/main.0aaf1f3e.chunk.js"
   ]
 }
