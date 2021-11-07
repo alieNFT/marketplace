@@ -5,7 +5,7 @@ import NavLink from "./navLink";
 export const NavLinks = () => {
   const activeLink = useLocation();
   const links = [
-    { linkText: "Home", linkUrl: "home" },
+    { linkText: "Home", linkUrl: "" },
     { linkText: "Discover", linkUrl: "discover" },
   ];
   return (

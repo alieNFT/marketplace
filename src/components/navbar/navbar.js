@@ -1,4 +1,6 @@
+import { List, X } from "phosphor-react";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "./logo";
 import NavLink from "./navLink";
 import NavLinks from "./navLinks";
@@ -11,6 +13,7 @@ export const Navbar = () => {
   const [isConnected, setisConnected] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [balance, setBalance] = useState(null);
+  const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
 
   const formatWalletAddress = (address) => {
     var address = address.split("");
@@ -65,7 +68,58 @@ export const Navbar = () => {
         <div className="flex items-center">
           <SearchBar />
           <WalletConnection />
+          <div className="md:hidden ml-2">
+            <button
+              onClick={() => {
+                setIsMobileNavVisible(true);
+              }}
+            >
+              <List size={24} className="text-white" />
+            </button>
+          </div>
         </div>
+        {isMobileNavVisible && (
+          <div className="w-screen h-screen fixed flex flex-col top-0 right-0 bg-black z-30">
+            <div className="flex items-center justify-between px-6 py-4">
+              <Logo />
+              <button
+                onClick={() => {
+                  setIsMobileNavVisible(false);
+                }}
+              >
+                <X size={24} className="text-white" />
+              </button>
+            </div>
+            <div className="flex-grow flex flex-col items-center justify-center">
+              <div
+                onClick={() => {
+                  setIsMobileNavVisible(false);
+                }}
+              >
+                <Link to={`/`}>
+                  <span
+                    className={`font-medium text-4xl text-white font-alien mr-4 cursor-pointer mb-6`}
+                  >
+                    Home
+                  </span>
+                </Link>
+              </div>
+              <div
+                onClick={() => {
+                  setIsMobileNavVisible(false);
+                }}
+              >
+                <Link to={`/discover`}>
+                  <span
+                    className={`font-medium text-4xl text-white font-alien mr-4 cursor-pointer`}
+                  >
+                    Discover
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </walletContext.Provider>
   );

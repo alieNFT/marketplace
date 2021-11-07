@@ -2,7 +2,7 @@ import Navbar from "./components/navbar/navbar";
 import { Discover } from "./components/discover/discover";
 import NftDetails from "./components/nft/nftDetails";
 import { Footer } from "./components/footer/footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { Home } from "./components/home/home";
 import React, { useState } from "react";
 import ScrollToTop from "./ScrollToTop";
@@ -519,16 +519,16 @@ function App() {
       <NftContext.Provider
         value={{ nftList, setNftList, selectedNft, setSelectedNft }}
       >
-        <Router>
+        <HashRouter basename="/">
           <ScrollToTop />
           <Navbar />
           <Switch>
             <Route path={"/discover"} exact component={Discover}></Route>
-            <Route path={"/home"} exact component={Home}></Route>
+            <Route path={"/"} exact component={Home}></Route>
             <Route path={"/nfts/:id"} exact component={NftDetails}></Route>
           </Switch>
           <Footer />
-        </Router>
+        </HashRouter>
       </NftContext.Provider>
     </div>
   );
