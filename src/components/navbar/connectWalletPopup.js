@@ -24,6 +24,8 @@ export const ConnectWalletPopup = ({ closePopup }) => {
           var address = formatWalletAddress(result[0]);
           setWalletAddress(address);
           setisConnected(true);
+          closePopup();
+
           window.ethereum
             .request({
               method: "eth_getBalance",
@@ -46,7 +48,7 @@ export const ConnectWalletPopup = ({ closePopup }) => {
       className="fixed top-0 left-0 w-screen h-screen z-40 bg-gray-darkest bg-opacity-75 flex items-center justify-centre"
     >
       <div className="bg-black w-1/4 mx-auto flex flex-col h-64 rounded-md">
-        <div className="flex justify-between items-center border-b border-gray-darkest px-4 py-3">
+        <div className="flex justify-between items-center border-b border-gray-darkest px-4 py-5">
           <h3 className="font-alien text-white">Connect wallet</h3>
           <button
             onClick={() => {

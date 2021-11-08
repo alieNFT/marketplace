@@ -80,7 +80,7 @@ export const Navbar = () => {
         </div>
         {isMobileNavVisible && (
           <div className="w-screen h-screen fixed flex flex-col top-0 right-0 bg-black z-30">
-            <div className="flex items-center justify-between px-6 py-4">
+            <div className="flex items-center justify-between px-6 py-4 bg-green-900 bg-opacity-25">
               <Logo />
               <button
                 onClick={() => {
@@ -90,18 +90,19 @@ export const Navbar = () => {
                 <X size={24} className="text-white" />
               </button>
             </div>
-            <div className="flex-grow flex flex-col items-center justify-center">
+            <div className="flex-grow flex flex-col px-6 mt-24">
+              <p className="text-2xl text-white font-nunito mb-12">Go to :</p>
               <div
                 onClick={() => {
                   setIsMobileNavVisible(false);
                 }}
               >
                 <Link to={`/`}>
-                  <span
-                    className={`font-medium text-4xl text-white font-alien mr-4 cursor-pointer mb-6`}
+                  <p
+                    className={`font-medium text-5xl text-white font-alien mr-4 cursor-pointer mb-5`}
                   >
                     Home
-                  </span>
+                  </p>
                 </Link>
               </div>
               <div
@@ -110,11 +111,11 @@ export const Navbar = () => {
                 }}
               >
                 <Link to={`/discover`}>
-                  <span
-                    className={`font-medium text-4xl text-white font-alien mr-4 cursor-pointer`}
+                  <p
+                    className={`font-medium text-5xl text-white font-alien mr-4 cursor-pointer`}
                   >
                     Discover
-                  </span>
+                  </p>
                 </Link>
               </div>
             </div>

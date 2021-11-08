@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -10,9 +11,11 @@ export const Home = () => {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eum
         minus excepturi sit debiti
       </p>
-      <button className="bg-primary font-semibold font-nunito  px-8 py-3">
-        Discover our collection
-      </button>
+      <Link to={"/discover"}>
+        <button className="bg-primary font-semibold font-alien  px-8 py-3">
+          Discover our collection
+        </button>
+      </Link>
     </div>
   );
 };

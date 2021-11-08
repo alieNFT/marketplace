@@ -7,7 +7,7 @@ export const NavLink = ({ link, active }) => {
     ? "text-primary font-semibold"
     : "text-gray-300 hover:text-gray-300";
   return (
-    <Link to={`/${link.linkUrl}`}>
+    <Link to={`${link.linkUrl}`}>
       <li
         className={`${linkActive} font-medium text-sm font-alien mr-4 cursor-pointer`}
       >
