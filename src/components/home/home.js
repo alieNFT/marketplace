@@ -8,8 +8,8 @@ export const Home = () => {
         Welcome the new era of art trading
       </h1>
       <p className="text-xl text-white font-light font-nunito text-center mb-12">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eum
-        minus excepturi sit debiti
+        The AlieNft marketplace is an Online Art marketplace for NFTs, where you
+        can buy, sell, and store your Crypto Art Collection.
       </p>
       <Link to={"/discover"}>
         <button className="bg-primary font-semibold font-alien  px-8 py-3">
